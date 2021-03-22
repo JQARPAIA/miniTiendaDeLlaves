@@ -1,4 +1,11 @@
 const container = document.querySelector(".flex-container");
+const header = document.querySelector(".pageHeader");
+
+let headerContent = document.createElement('DIV');
+headerContent.innerHTML = `<h1>Mini tienda de llaves</h1>
+    <p>En esta mini app para comprar una llave, solo trabajamos la parte del FrontEnd. Se puede ver a muy a grandes rasgos el sencillo pero buen trabajo hecho para desarrollar esta sencilla aplicacion.</p>
+`;
+header.appendChild(headerContent);
 
 function createKey(name, model, price){
     var img = `<img src="llave.jpg">`;

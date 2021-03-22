@@ -5,7 +5,14 @@ body {
     font-size: 1em;
     font-family: sans-serif;
 }
-
+.pageHeader {
+    display: flex;
+    justify-content: center;
+    margin: 0 25%;
+}
+.pageHeader p {
+    text-align: justify;
+}
 .flex-container {
     display: flex;
     flex-wrap: wrap;
