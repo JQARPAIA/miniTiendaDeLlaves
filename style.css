@@ -42,8 +42,18 @@ h4 b{
 
 .flex-item:hover {
     box-shadow: 0 0 150px #4e4;
+    animation: expanding 1s ease-out 0s 1 normal forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
+@keyframes expanding {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
 .flex-container img {
     max-height: 150px;
 }
